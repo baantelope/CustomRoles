@@ -1,0 +1,51 @@
+{
+    "id": "/subscriptions/b7861bed-3b53-48e1-a75b-d808d2a2a6b2/providers/Microsoft.Authorization/roleDefinitions/d9ec3354-3922-49d0-8ecf-e61fc8af5580",
+    "properties": {
+        "roleName": "Cloud Developer",
+        "description": "This is a custom Azure Role for Cloud Developers - Available in the Production/NonProduction/Sandbox subscriptions.  Meant to be assigned at the Resource Group Level",
+        "assignableScopes": [
+            "/subscriptions/2c4fec59-4b05-47a8-a4a4-e6535cd8cd64",
+            "/subscriptions/b7861bed-3b53-48e1-a75b-d808d2a2a6b2",
+            "/subscriptions/bb1fa4b4-6836-4bc4-afcb-b7c46769a09b"
+        ],
+        "permissions": [
+            {
+                "actions": [
+                    "Microsoft.ApiManagement/service/*",
+                    "Microsoft.Authorization/*/read",
+                    "Microsoft.Cache/register/action",
+                    "Microsoft.Cache/redis/*",
+                    "Microsoft.DocumentDb/databaseAccounts/*",
+                    "Microsoft.Insights/alertRules/*",
+                    "Microsoft.Insights/generateLiveToken/read",
+                    "Microsoft.Insights/metricAlerts/*",
+                    "Microsoft.Insights/components/*",
+                    "Microsoft.Insights/scheduledqueryrules/*",
+                    "Microsoft.Insights/topology/read",
+                    "Microsoft.Insights/transactions/read",
+                    "Microsoft.Insights/webtests/*",
+                    "Microsoft.KeyVault/checkNameAvailability/read",
+                    "Microsoft.KeyVault/deletedVaults/read",
+                    "Microsoft.KeyVault/locations/*/read",
+                    "Microsoft.KeyVault/vaults/*/read",
+                    "Microsoft.KeyVault/operations/read",
+                    "Microsoft.ResourceHealth/availabilityStatuses/read",
+                    "Microsoft.Resources/deployments/*",
+                    "Microsoft.Resources/subscriptions/resourceGroups/read",
+                    "Microsoft.Support/*",
+                    "Microsoft.Web/certificates/*",
+                    "Microsoft.Web/listSitesAssignedToHostName/read",
+                    "Microsoft.Web/serverFarms/join/action",
+                    "Microsoft.Web/serverFarms/read",
+                    "Microsoft.Web/sites/*",
+                    "Microsoft.Network/virtualNetworks/subnets/joinViaServiceEndpoint/action"
+                ],
+                "notActions": [],
+                "dataActions": [
+                    "Microsoft.KeyVault/vaults/*"
+                ],
+                "notDataActions": []
+            }
+        ]
+    }
+}
